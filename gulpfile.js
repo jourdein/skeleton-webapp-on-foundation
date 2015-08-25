@@ -10,10 +10,11 @@ var gulp           = require('gulp'),
     uglify         = require('gulp-uglify'),
     concat         = require('gulp-concat'),
     watch          = require('gulp-watch'),
+    data           = require('gulp-data'),
     browserSync    = require('browser-sync'),
     reload         = browserSync.reload,
     path           = require('path'),
-    swig           = require('swig'),
+    swig           = require('gulp-swig'),
     nunjucksRender = require('gulp-nunjucks-render'),
     modRewrite     = require('connect-modrewrite');
 
@@ -127,6 +128,10 @@ gulp.task('sass', function() {
 gulp.task('layout', function () {
   nunjucksRender.nunjucks.configure(['client/views']);
   return gulp.src(['./client/views/templates/*.html', '!./client/views/layout.html', '!./client/views/_*.html'])
+    .pipe(frontMatter())
+    .pipe(data(function(file) {
+      return file.frontMatter;
+    }))
     .pipe(nunjucksRender())
     .pipe(gulp.dest('./build/pages'));
 });

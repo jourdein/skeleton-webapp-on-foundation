@@ -21,8 +21,11 @@
   "devDependencies": {
     "connect-modrewrite": "^0.8.2",
     "gulp": "^3.9.0",
+    "gulp-data": "^1.2.0",
+    "gulp-front-matter": "^1.2.3",
     "gulp-nunjucks-render": "^0.2.1",
     "gulp-sass": "^2.0.4",
+    "gulp-swig": "^0.7.4",
     "gulp-watch": "^4.3.5"
   },
   "scripts": {
