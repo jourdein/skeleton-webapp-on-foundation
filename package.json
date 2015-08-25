@@ -16,8 +16,7 @@
     "gulp-watch": "^4.3.5",
     "path": "^0.11.14",
     "rimraf": "^2.4.2",
-    "run-sequence": "^1.1.2",
-    "swig": "^1.4.2"
+    "run-sequence": "^1.1.2"
   },
   "devDependencies": {
     "connect-modrewrite": "^0.8.2",
@@ -31,8 +30,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ecf",
-    "pitchin"
+    "tengkorak",
+    "skeleton",
+    "kkorok"
   ],
   "author": "Matt Jourdein",
   "license": "MIT"
