@@ -1,0 +1,6 @@
+{
+  "name": "Skeleton @ Tengkorak",
+  "dependencies": {
+    "foundation": "~5.5.2"
+  }
+}
